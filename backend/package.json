@@ -1,0 +1,18 @@
+{
+  "name": "br.com.driveschool.backend",
+  "version": "1.0.0",
+  "description": "Backend of a Drive School CRUD application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joao Paulo Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http-status-codes": "^1.3.0",
+    "mysql2": "^1.6.1",
+    "nodemon": "^1.18.3",
+    "sequelize": "^4.38.0"
+  }
+}
