@@ -12,9 +12,9 @@ const sequelize = new Sequelize('DriveSchool', 'jramos', 'xD11041997jp!@#',{
 	define: { timestamps: false }	
 });
 
-sequelize.query("SELECT * FROM aluno")
+/*sequelize.query("SELECT * FROM aluno")
 	.then(myTableRows => {
 		console.log(myTableRows);
-});
+});*/
 
 module.exports = exports = sequelize;

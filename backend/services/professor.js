@@ -27,7 +27,7 @@ const post = (req) => {
 }
 
 
-modelu.exports = {
+module.exports = {
 	get,
 	getById,
 	parseFindOptions,
