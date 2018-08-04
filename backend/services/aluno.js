@@ -1,4 +1,4 @@
-const Aluno = require('../models/index');
+const { Aluno}= require('../models/index');
 
 const get = (req) => {
 	return Aluno.findAll()
@@ -18,8 +18,11 @@ const parseFindOptions = (req) => {
 			id:id
 		},
 	}
-	.catch(error => console.log(error));
 }
+
+//const update = (req) => {
+//	
+//}
 
 const post = (req) => {
 	const {body} = req;
@@ -27,6 +30,23 @@ const post = (req) => {
 		.then(result => result)
 		.catch(error => console.log(error));
 };
+
+const deleteObj = (req) => {
+	const {id} = req.params;
+	return Aluno.destroy({
+		where: {id:id}
+	})
+}
+const remove = (req) => {
+	console.log("IM DELETING!!!!");
+	return deleteObj(req)
+		.then(result => result)
+		.catch(error => console.log(error));
+	
+}
 module.exports = {
 	get,
+	post,
+	getById,
+	remove,
 }

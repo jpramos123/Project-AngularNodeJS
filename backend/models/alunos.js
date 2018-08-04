@@ -1,6 +1,5 @@
 const connection = require('../database/mariadb');
-const 
-
+const {INTEGER, STRING, DATE} = connection.Sequelize;
 const schema = {
 	
 	id:{
