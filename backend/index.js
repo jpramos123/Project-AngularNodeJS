@@ -8,3 +8,6 @@ app.listen(port, (req,res) => {
 	console.log(`Server running on the port ${port}`);
 
 });
+
+app.use(bodyParse.json());
+app.use('/', require('./routes/index'));
