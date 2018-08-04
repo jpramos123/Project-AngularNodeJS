@@ -1,0 +1,15 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend of the CRUD application DriveSchool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joao Paulo Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^6.1.2",
+    "@angular/core": "^6.1.1"
+  }
+}
